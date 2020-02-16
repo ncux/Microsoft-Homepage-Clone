@@ -1,0 +1,118 @@
+/* grid row cards */
+.grid-row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* xbox */
+.xbox p {
+    display: none;
+}
+
+.xbox .content .button {
+    margin-top: 1.5rem;
+}
+
+/* sustainability */
+.sustainability .content {
+    width: 85%;
+    padding: 55px 0 0 30px;
+}
+
+/* bottom site links */
+.site-links-inner {
+    margin-left: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* footer */
+footer .footer-inner div {
+    margin-right: 1rem;
+}
+
+
+/* smartphones */
+@media(max-width: 500px) {
+
+    /* mobile menu button */
+    .menu-button {
+        display: block;
+        margin-top: 0;
+    }
+
+    /* navbar */
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        background: #f2f2f2;
+        opacity: 0.8;
+        border-right: 1px solid #cccccc;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-25px);
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+        font-size: 1rem;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 2.8rem;
+    }
+
+    /* grid row cards */
+    .grid-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* xbox */
+    .xbox .content .button {
+        font-weight: normal;
+        font-size: 0.8rem;
+        padding: 10px 18px;
+    }
+
+    /* sustainability */
+    .sustainability .content p {
+        display: none;
+    }
+
+    .sustainability .content h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .sustainability .content .button {
+        font-weight: normal;
+        font-size: 0.8rem;
+        padding: 10px 18px;
+    }
+
+    /* social */
+    .social {
+        margin: 40px 0 20px 0;
+    }
+
+    .social h6 {
+        font-size: 0.8rem;
+    }
+
+    /* bottom site links */
+    .site-links-inner {
+        margin-left: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
